@@ -739,6 +739,17 @@ func (rh *RouteHandler) UpdateManifest(response http.ResponseWriter, request *ht
 	response.WriteHeader(http.StatusCreated)
 }
 
+// DeleteContainerImage godoc
+// @Summary Delete contianer image
+// @Description Delete a container image given a reference or a digest
+// @Accept  json
+// @Produce json
+// @Param   name     			path    string     true        "repository name"
+// @Param   reference     path    string     true        "image reference or digest"
+// @Success 200 {string} string	"ok"
+// @Router /v2/{name}/manifests/{reference} [delete].
+func (rh *RouteHandler) DeleteContainerImage(response http.ResponseWriter, request *http.Request) {}
+
 // DeleteManifest godoc
 // @Summary Delete image manifest
 // @Description Delete an image's manifest given a reference or a digest
