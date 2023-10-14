@@ -748,7 +748,7 @@ func (rh *RouteHandler) UpdateManifest(response http.ResponseWriter, request *ht
 // @Param   reference     path    string     true        "image reference or digest"
 // @Success 200 {string} string	"ok"
 // @Router /v2/{name}/manifests/{reference} [delete].
-func (rh *RouteHandler) DeleteContainerImage(response http.ResponseWriter, request *http.Request) {}
+func (rh *RouteHandler) DeleteContainerImages(response http.ResponseWriter, request *http.Request) {}
 
 // DeleteManifest godoc
 // @Summary Delete image manifest
